@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/brown_lt_squatch"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_small"
+    android:layout_marginLeft="@dimen/marker_window_horiz"
+    android:layout_marginRight="@dimen/marker_window_horiz">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/brown_dark_squatch"
+        android:padding="@dimen/padding_tiny"
+        android:text="SasqWatch Encounter Report"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/brown_lt_text"
+        android:fontFamily="sans-serif-light" />
+
+    <TextView
+        android:id="@+id/textViewuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brown_med_squatch"
+        android:paddingLeft="@dimen/padding_small"
+        android:text="user"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/brown_lt_text"
+        android:fontFamily="sans-serif" />
+
+    <TextView
+        android:id="@+id/textViewstate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brown_med_squatch"
+        android:paddingLeft="@dimen/padding_small"
+        android:text="state"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/brown_lt_text"
+        android:fontFamily="sans-serif" />
+
+    <TextView
+        android:id="@+id/textViewdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brown_med_squatch"
+        android:paddingLeft="@dimen/padding_small"
+        android:text="date"
+        android:textColor="@color/brown_lt_text"
+        android:textSize="@dimen/text_size_small"
+        android:fontFamily="sans-serif" />
+
+    <TextView
+        android:id="@+id/textViewencounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_small"
+        android:text="encounter type"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/dark_text"
+        android:fontFamily="sans-serif" />
+
+    <TextView
+        android:id="@+id/textViewbehavior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_small"
+        android:text="behavior"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/dark_text"
+        android:fontFamily="sans-serif" />
+
+    <TextView
+        android:id="@+id/textViewsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_small"
+        android:text="sign type"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/dark_text"
+        android:fontFamily="sans-serif" />
+
+    <TextView
+        android:id="@+id/textViewComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brown_med_squatch"
+        android:padding="@dimen/padding_tiny"
+        android:text="Comment:"
+        android:textSize="@dimen/text_size_medium"
+        android:textStyle="italic"
+        android:textColor="@color/brown_lt_text"
+        android:fontFamily="sans-serif-light" />
+
+    <TextView
+        android:id="@+id/textViewcomment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_small"
+        android:text="comment"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/dark_text"
+        android:fontFamily="sans-serif" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewSighting"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"/>
+
+</LinearLayout>

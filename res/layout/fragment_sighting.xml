@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:id="@+id/sighting_form">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Data For Sasquatch Encounter"
+        android:id="@+id/textView"
+        android:textSize="20sp"
+        android:background="#ff000000"
+        android:textColor="#ffffffff"
+        android:padding="4dp"
+        android:fontFamily="sans-serif-light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude"
+        android:id="@+id/textView2"
+        android:textSize="@dimen/text_size_medium" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude"
+        android:id="@+id/textView3"
+        android:textSize="@dimen/text_size_medium" />
+
+    <TextView
+        android:id="@+id/textViewType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encounter type"
+        android:textSize="@dimen/text_size_large"
+        android:fontFamily="sans-serif-light" />
+
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+    <TextView
+        android:id="@+id/textViewState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State"
+        android:textSize="@dimen/text_size_large"
+        android:fontFamily="sans-serif-light" />
+
+    <AutoCompleteTextView
+        android:id="@+id/textViewstate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+    <TextView
+        android:id="@+id/textViewSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign type:"
+        android:textSize="@dimen/text_size_large"
+        android:fontFamily="sans-serif-light" />
+
+    <Spinner
+        android:id="@+id/spinnerSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+    <TextView
+        android:id="@+id/textViewBehavior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Behavior"
+        android:textSize="@dimen/text_size_large"
+        android:fontFamily="sans-serif-light" />
+
+    <Spinner
+        android:id="@+id/spinnerBehavior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+    <TextView
+        android:id="@+id/textViewComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment"
+        android:textSize="@dimen/text_size_large"
+        android:fontFamily="sans-serif-light" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/editTextComment"
+
+        android:gravity="top"
+        android:minHeight="84dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewSighting"
+        android:src="@drawable/default_user"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit New Sighting"
+        android:id="@+id/buttonSigthing"
+
+        android:layout_marginBottom="420dp"
+        style="@style/ButtonSquatch" />
+
+</LinearLayout>
+
+
+
+</ScrollView>

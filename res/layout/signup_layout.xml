@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/green_med_squatch">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:id="@+id/sigup_form"
+        android:background="@color/green_med_squatch">
+
+        <TextView
+            android:id="@+id/textViewUserRank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rank: Tenderfoot"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/brown_dark_squatch"
+            android:fontFamily="sans-serif-light" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/imageViewUserRank"
+            android:src="@drawable/user_rank0" />
+
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username:"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/brown_dark_squatch"
+            android:fontFamily="sans-serif-light" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editTextUserName"
+            android:gravity="top"
+            android:minHeight="32dp"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/textViewLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location:"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/brown_dark_squatch"
+            android:fontFamily="sans-serif-light" />
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/autoCompleteTextLocation"
+            android:gravity="top"
+            android:minHeight="32dp"
+            android:hint="Wyoming, British Columbia, etc.."
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/textViewAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About:"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/brown_dark_squatch"
+            android:fontFamily="sans-serif-light" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editTextUserAbout"
+            android:gravity="top"
+            android:minHeight="32dp"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/textViewContactPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile picture:"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/brown_dark_squatch"
+            android:fontFamily="sans-serif-light" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageViewContactPic"
+            android:src="@drawable/default_user" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit User Info"
+            android:id="@+id/buttonProfile"
+            android:layout_marginBottom="420dp"
+            android:textSize="@dimen/text_size_medium"
+            style="@style/ButtonSquatch"
+            android:layout_marginTop="@dimen/padding_medium" />
+
+    </LinearLayout>
+
+
+
+</ScrollView>

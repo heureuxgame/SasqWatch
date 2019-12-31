@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_med_squatch">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/textViewMmapInfoHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Most Recent Displayed"
+        android:textSize="@dimen/text_size_small"
+        android:layout_above="@+id/textViewMmapInfo"
+        android:layout_toRightOf="@+id/buttonOlder"
+        android:layout_toLeftOf="@+id/buttonNewer"
+        android:textColor="@color/brown_dark_squatch"
+        android:fontFamily="sans-serif" />
+
+    <TextView
+        android:id="@+id/textViewMmapInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Map Info"
+        android:textSize="@dimen/text_size_medium"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/buttonOlder"
+        android:layout_toLeftOf="@+id/buttonNewer"
+        android:textColor="@color/brown_dark_squatch"
+        android:fontFamily="sans-serif" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonNewer"
+        android:layout_below="@+id/ad_view"
+        tools:context=".MapsActivity" />
+
+    <Button
+        android:id="@+id/buttonNewer"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Newer"
+        android:fontFamily="sans-serif"
+        style="@style/ButtonSquatch" />
+    <Button
+        android:id="@+id/buttonOlder"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Older"
+        android:fontFamily="sans-serif"
+        style="@style/ButtonSquatch" />
+</RelativeLayout>

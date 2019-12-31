@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_med_squatch"
+    android:orientation="vertical"
+    android:padding="@dimen/squatch_activity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_listview_unit" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayoutSighting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextComment"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:layout_marginTop="@dimen/padding_medium"
+        android:background="@color/brown_lt_squatch"
+        android:paddingBottom="@dimen/padding_medium"
+        >
+
+        <TextView
+            android:id="@+id/textViewHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/brown_med_squatch"
+            android:text="Encounter Details"
+            android:paddingLeft="@dimen/padding_tiny"
+            android:textColor="@color/brown_lt_text"
+            android:textSize="@dimen/text_size_large"
+            android:fontFamily="sans-serif-light" />
+
+        <TextView
+            android:id="@+id/textViewuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewHeader"
+            android:layout_marginRight="@dimen/padding_medium"
+            android:paddingLeft="@dimen/padding_tiny"
+            android:text="user"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/dark_text"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:id="@+id/textViewdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewHeader"
+            android:layout_toRightOf="@+id/textViewuser"
+            android:text="date"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/dark_text"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:id="@+id/textViewstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewuser"
+            android:layout_marginRight="@dimen/padding_medium"
+            android:paddingLeft="@dimen/padding_tiny"
+            android:text="state"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/dark_text"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:id="@+id/textViewencounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewuser"
+            android:layout_toRightOf="@+id/textViewstate"
+            android:text="encounter type"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/dark_text"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:id="@+id/textViewbehavior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewstate"
+            android:layout_marginRight="@dimen/padding_medium"
+            android:paddingLeft="@dimen/padding_tiny"
+            android:text="behavior"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/dark_text"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:id="@+id/textViewsign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewstate"
+            android:layout_toRightOf="@+id/textViewbehavior"
+            android:text="sign type"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/dark_text"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:id="@+id/textViewcomment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewbehavior"
+            android:paddingLeft="@dimen/padding_tiny"
+            android:text="comment"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/dark_text"
+            android:fontFamily="sans-serif" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editTextComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_view"
+        android:layout_toLeftOf="@+id/buttonComment"
+        android:background="@color/light_gray"
+        android:minHeight="48dp"
+        android:padding="@dimen/padding_medium"
+        android:textSize="@dimen/text_size_medium"
+        android:layout_marginTop="@dimen/padding_medium"/>
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayoutSighting"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="12.0sp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonComment"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/editTextComment"
+        android:text="Post"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/light_gray"
+        style="@style/ButtonSquatch" />
+
+</RelativeLayout>

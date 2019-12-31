@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@color/brown_dark_squatch</item>
+        <item name="android:textColor">@color/brown_lt_squatch</item>
+    </style>
+
+    <style name="ApplicationStyle" parent="android:Theme">
+        <item name="android:buttonStyle">@style/ButtonSquatch</item>
+    </style>
+
+    <style name="ButtonSquatch" parent="AppTheme">
+        <item name="android:background">@drawable/custbutton</item>
+        <item name="android:paddingRight">@dimen/button_padding</item>
+        <item name="android:paddingLeft">@dimen/button_padding</item>
+        <item name="android:textColor">@color/light_gray</item>
+    </style>
+
+</resources>

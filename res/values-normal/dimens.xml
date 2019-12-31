@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="squatch_activity_horiz">16dp</dimen>
+    <dimen name="squatch_activity_vert">16dp</dimen>
+    <dimen name="squatch_activity">16dp</dimen>
+
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="padding_medium">10dp</dimen>
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_tiny">3dp</dimen>
+
+    <dimen name="marker_window_horiz">22dp</dimen>
+
+    <dimen name="window_horiz">16dp</dimen>
+
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="button_padding">10dp</dimen>
+</resources>

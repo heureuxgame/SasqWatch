@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_med_squatch"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_medium"
+    android:id="@+id/scrollViewHelp">
+
+    <RelativeLayout
+        android:id="@+id/relativeHelpLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textViewIcons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Icon Descriptions"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/dark_text"
+            android:fontFamily="sans-serif-light" />
+
+        <ImageView
+            android:id="@+id/imageViewRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewIcons"
+            android:minHeight="@dimen/button_height"
+            android:minWidth="@dimen/button_height"
+            android:background="@mipmap/map_icon_r"
+            android:layout_marginBottom="@dimen/padding_medium"/>
+
+        <TextView
+            android:id="@+id/textViewRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageViewRed"
+            android:layout_alignBottom="@+id/imageViewRed"
+            android:text="Sightings"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:textColor="@color/dark_text"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:fontFamily="sans-serif-light" />
+
+        <ImageView
+            android:id="@+id/imageViewOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewRed"
+            android:minHeight="@dimen/button_height"
+            android:minWidth="@dimen/button_height"
+            android:background="@mipmap/map_icon_o"
+            android:layout_marginBottom="@dimen/padding_medium"/>
+
+        <TextView
+            android:id="@+id/textViewOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageViewOrange"
+            android:layout_alignBottom="@+id/imageViewOrange"
+            android:text="Audial encounters"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:textColor="@color/dark_text"
+            android:fontFamily="sans-serif-light" />
+
+        <ImageView
+            android:id="@+id/imageViewYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewOrange"
+            android:minHeight="@dimen/button_height"
+            android:minWidth="@dimen/button_height"
+            android:background="@mipmap/map_icon_y"
+            android:layout_marginBottom="@dimen/padding_medium"/>
+
+        <TextView
+            android:id="@+id/textViewYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageViewYellow"
+            android:layout_alignBottom="@+id/imageViewYellow"
+            android:text="Sasquatch sign"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/dark_text"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:fontFamily="sans-serif-light" />
+
+        <TextView
+            android:id="@+id/textViewencounterh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewYellow"
+            android:layout_marginBottom="@dimen/padding_tiny"
+            android:text="Encounter type:"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/dark_text"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light" />
+
+        <TextView
+            android:id="@+id/textViewencounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewencounterh"
+            android:text="This can be a sighting, Audial encounter (the sasquatch makes a noise or call) or it can be sign left by a sasquatch."
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/dark_text"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:id="@+id/textViewbehaviorh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewencounter"
+            android:layout_marginBottom="@dimen/padding_tiny"
+            android:text="Behavior:"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/dark_text"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light" />
+
+        <TextView
+            android:id="@+id/textViewbehavior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewbehaviorh"
+            android:text="This describes the activity of the sasquatch.  Most are self-explanatory but Trundling refers to rolling rocks down a hill, a commonly described activity for sasquatch."
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/dark_text"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:id="@+id/textViewmarkingh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewbehavior"
+            android:text="Map an encounter:"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/dark_text"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:layout_marginBottom="@dimen/padding_tiny"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light" />
+
+        <TextView
+            android:id="@+id/textViewmarking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewmarkingh"
+            android:text="Zoom the map to the encounter location and long press to open a dialog to record the encounter."
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/dark_text"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:id="@+id/textViewLoginh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewmarking"
+            android:text="Login:"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/dark_text"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:layout_marginBottom="@dimen/padding_tiny"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light" />
+
+        <TextView
+            android:id="@+id/textViewLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewLoginh"
+            android:text="Before you can map encounters or post comments, you will be prompted to create a profile."
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/dark_text"
+            android:fontFamily="sans-serif" />
+
+    </RelativeLayout>
+</ScrollView>
